@@ -1,0 +1,8 @@
+.completed {
+    text-decoration: line-through;
+}
+
+.inputError {
+    font-size: .75em;
+    color: crimson;
+}
