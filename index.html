@@ -24,7 +24,10 @@
                 
                 <button @click="generateMails()" type="button" class="btn btn-outline-info">Generate Mail</button>
                 
-                <p v-for="email in userMails" class="mt-3">{{ email }}</p>
+                <!-- SE la lunghezza dell'array è maggiore di 9 me li fai vedere tutti -->
+                <div v-if="userMails.length > 9">
+                    <p v-for="email in userMails" class="mt-3">{{ email }}</p>
+                </div>
             </div>
         </div>
 
